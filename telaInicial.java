@@ -1,8 +1,6 @@
 package SituacaoAprendizagem;
 
 public class telaInicial extends javax.swing.JFrame {
-
-    //testando
     
     //Todos os arrays---------------------------------------------------
     //Dia do 1° jogo
