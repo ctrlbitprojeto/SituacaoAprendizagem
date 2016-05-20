@@ -31,7 +31,7 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Component id="painelPrincipal" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
@@ -144,7 +144,7 @@
                           <Group type="102" attributes="0">
                               <Component id="layoutInutil" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="txtValorIngresso" pref="84" max="32767" attributes="0"/>
+                              <Component id="txtValorIngresso" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
@@ -155,11 +155,11 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="layoutInutil" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtValorIngresso" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="layoutInutil" max="32767" attributes="0"/>
+                          <Component id="txtValorIngresso" pref="14" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="32" max="32767" attributes="0"/>
+                      <EmptySpace type="separate" pref="32" max="32767" attributes="0"/>
                       <Component id="btnComprar" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -173,9 +173,6 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="txtValorIngresso">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="R$ Valor"/>
-              </Properties>
             </Component>
             <Component class="javax.swing.JButton" name="btnComprar">
               <Properties>
@@ -212,6 +209,7 @@
                               <Component id="caixaCadeira" min="-2" pref="49" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                               <Component id="btnConsultarDisponibilidade" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="1" max="-2" attributes="0">
@@ -223,17 +221,17 @@
                                   </Group>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="txtDisponibilidadeSN" min="-2" pref="136" max="-2" attributes="0"/>
+                              <Component id="txtDisponibilidadeSN" max="32767" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <Component id="comboSetor" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
@@ -242,7 +240,10 @@
                                   <Component id="caixaFileira" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <Component id="txtDisponibilidadeSN" min="-2" pref="39" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                              <Component id="txtDisponibilidadeSN" min="-2" pref="22" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace pref="11" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -586,9 +587,9 @@
                           <Component id="layoutInutil10" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="txtTotalArrecadado" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtIngressosVendidos" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="txtTotalArrecadado" max="32767" attributes="0"/>
+                          <Component id="txtIngressosVendidos" pref="40" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
@@ -598,14 +599,14 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="layoutInutil10" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtTotalArrecadado" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="layoutInutil10" max="32767" attributes="0"/>
+                          <Component id="txtTotalArrecadado" pref="14" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="layoutInutil12" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtIngressosVendidos" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtIngressosVendidos" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="32" max="32767" attributes="0"/>
                   </Group>
@@ -624,14 +625,8 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="txtTotalArrecadado">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="RS Valor"/>
-              </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="txtIngressosVendidos">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="N&#xfa;mero Total"/>
-              </Properties>
             </Component>
           </SubComponents>
         </Container>
@@ -658,11 +653,11 @@
                           <Component id="layoutInutil13" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="txtPrimeiroJogoArrecadado" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtIngressosVendidosPrimeiroJogo" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="txtIngressosVendidosPrimeiroJogo" max="32767" attributes="0"/>
+                          <Component id="txtPrimeiroJogoArrecadado" pref="64" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="155" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -670,16 +665,16 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="layoutInutil13" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtPrimeiroJogoArrecadado" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="layoutInutil13" max="32767" attributes="0"/>
+                          <Component id="txtPrimeiroJogoArrecadado" pref="14" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="layoutInutil14" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtIngressosVendidosPrimeiroJogo" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtIngressosVendidosPrimeiroJogo" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="44" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -696,14 +691,8 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="txtPrimeiroJogoArrecadado">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="RS Valor"/>
-              </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="txtIngressosVendidosPrimeiroJogo">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="N&#xfa;mero Total"/>
-              </Properties>
             </Component>
           </SubComponents>
         </Container>
@@ -730,9 +719,9 @@
                           <Component id="layoutInutil15" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="txtSegundoJogoArrecadado" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtIngressosVendidosSegundoJogo" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="txtIngressosVendidosSegundoJogo" max="32767" attributes="0"/>
+                          <Component id="txtSegundoJogoArrecadado" pref="64" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
@@ -742,14 +731,14 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="layoutInutil15" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtSegundoJogoArrecadado" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="layoutInutil15" max="32767" attributes="0"/>
+                          <Component id="txtSegundoJogoArrecadado" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="txtIngressosVendidosSegundoJogo" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="layoutInutil16" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="layoutInutil16" max="32767" attributes="0"/>
+                          <Component id="txtIngressosVendidosSegundoJogo" pref="14" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace pref="69" max="32767" attributes="0"/>
                   </Group>
@@ -768,14 +757,8 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="txtSegundoJogoArrecadado">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="RS Valor"/>
-              </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="txtIngressosVendidosSegundoJogo">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="N&#xfa;mero Total"/>
-              </Properties>
             </Component>
           </SubComponents>
         </Container>
