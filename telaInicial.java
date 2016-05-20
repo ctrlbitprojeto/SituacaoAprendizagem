@@ -1,7 +1,7 @@
 package SituacaoAprendizagem;
 
 public class telaInicial extends javax.swing.JFrame {
-    
+
     //Todos os arrays---------------------------------------------------
     //Dia do 1° jogo
     int setorAmareloD1[][] = new int[25][200];
