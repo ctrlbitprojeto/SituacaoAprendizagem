@@ -616,8 +616,14 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="txtTotalArrecadado">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="R$ 0,00"/>
+              </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="txtIngressosVendidos">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
             </Component>
           </SubComponents>
         </Container>
@@ -682,8 +688,14 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="txtPrimeiroJogoArrecadado">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="R$ 0,00"/>
+              </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="txtIngressosVendidosPrimeiroJogo">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
             </Component>
           </SubComponents>
         </Container>
@@ -748,8 +760,14 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="txtSegundoJogoArrecadado">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="R$ 0,00"/>
+              </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="txtIngressosVendidosSegundoJogo">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
             </Component>
           </SubComponents>
         </Container>

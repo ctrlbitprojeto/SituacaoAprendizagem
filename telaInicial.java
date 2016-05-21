@@ -342,6 +342,10 @@ public class telaInicial extends javax.swing.JFrame {
 
         layoutInutil12.setText("Ingressos vendidos: ");
 
+        txtTotalArrecadado.setText("R$ 0,00");
+
+        txtIngressosVendidos.setText("0");
+
         javax.swing.GroupLayout painelArrecadacaoDoisJogosLayout = new javax.swing.GroupLayout(painelArrecadacaoDoisJogos);
         painelArrecadacaoDoisJogos.setLayout(painelArrecadacaoDoisJogosLayout);
         painelArrecadacaoDoisJogosLayout.setHorizontalGroup(
@@ -377,6 +381,10 @@ public class telaInicial extends javax.swing.JFrame {
 
         layoutInutil14.setText("Ingressos vendidos: ");
 
+        txtPrimeiroJogoArrecadado.setText("R$ 0,00");
+
+        txtIngressosVendidosPrimeiroJogo.setText("0");
+
         javax.swing.GroupLayout painelPrimeiroJogoLayout = new javax.swing.GroupLayout(painelPrimeiroJogo);
         painelPrimeiroJogo.setLayout(painelPrimeiroJogoLayout);
         painelPrimeiroJogoLayout.setHorizontalGroup(
@@ -411,6 +419,10 @@ public class telaInicial extends javax.swing.JFrame {
         layoutInutil15.setText("Total arrecadado: ");
 
         layoutInutil16.setText("Ingressos vendidos: ");
+
+        txtSegundoJogoArrecadado.setText("R$ 0,00");
+
+        txtIngressosVendidosSegundoJogo.setText("0");
 
         javax.swing.GroupLayout painelSegundoJogoLayout = new javax.swing.GroupLayout(painelSegundoJogo);
         painelSegundoJogo.setLayout(painelSegundoJogoLayout);
