@@ -1,6 +1,7 @@
 package SituacaoAprendizagem;
 
 import java.text.DecimalFormat;
+import javax.swing.JOptionPane;
 
 public class telaInicial extends javax.swing.JFrame {
     
@@ -535,9 +536,13 @@ public class telaInicial extends javax.swing.JFrame {
 
         //se estiver escrito disponível então soma mais um na variável totalIngresos e 
         //chama o metodo lá embaixo
+        //aparece se a compra foi efetivada ou não
         if("Disponível".equals(txtDisponibilidadeSN.getText())){
-            tIngresos+=1;
+            tIngresos+=1;            
             comprandoIngressso();
+            JOptionPane.showMessageDialog(null,"Compra efetivada com Sucesso");
+        }else{
+            JOptionPane.showMessageDialog(null,"A compra não pôde ser efetivada");
         }
 
         //limpa os campos para o usuário e escreve o valor arrecadado e quantidade de ingressos em todos os jpanel's
