@@ -4,8 +4,6 @@ import java.text.DecimalFormat;
 
 public class telaInicial extends javax.swing.JFrame {
     
-    //testenovament
-    
     //Todos os arrays---------------------------------------------------
     //Dia do 1° jogo
     int setorAmareloD1[][] = new int[26][201];
