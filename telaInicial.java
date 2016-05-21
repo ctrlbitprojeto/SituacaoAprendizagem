@@ -30,12 +30,15 @@ public class telaInicial extends javax.swing.JFrame {
     //variável total ingresos -------------------------------------------
     int tIngresos = 0, tIngressos1dia = 0, tIngressos2dia = 0;
     
+    //PADRÃO DO NETBEANS ------------------------------------------------------
     public telaInicial() {
        
         initComponents();
 
     }
-
+    //-------------------------------------------------------------------------
+    
+    //PADRAÕ DO NETBEANS ------------------------------------------------------
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -523,21 +526,28 @@ public class telaInicial extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
+    //-------------------------------------------------------------------------
+    
+    //BOTÃO CONSULTAR DISPONIBILIDADE CLICADO----------------------------------------------
     private void btnConsultarDisponibilidadeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsultarDisponibilidadeActionPerformed
 
+        //limpa o jlabel valorIngresso e chama o método consultandoDisponibilidade lá embaixo
         txtValorIngresso.setText("");
         consultandoDisponibilidade();
         
     }//GEN-LAST:event_btnConsultarDisponibilidadeActionPerformed
 
+    //BOTÃO COMPRAR INGRESSO --------------------------------------------------------------
     private void btnComprarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarActionPerformed
 
+        //se estiver escrito disponível então soma mais um na variável totalIngresos e 
+        //chama o metodo lá embaixo
         if("Disponível".equals(txtDisponibilidadeSN.getText())){
             tIngresos+=1;
             comprandoIngressso();
         }
 
+        //limpa os campos para o usuário e escreve o valor arrecadado e quantidade de ingressos em todos os jpanel's
         txtSegundoJogoArrecadado.setText(df.format(totalArrecadado2dia));
         txtPrimeiroJogoArrecadado.setText(df.format(totalArrecadado1dia));
         txtIngressosVendidosSegundoJogo.setText(""+tIngressos2dia);
@@ -554,6 +564,7 @@ public class telaInicial extends javax.swing.JFrame {
 
     public static void main(String args[]) {
 
+        //PADRAÕ DO NETBEANS ------------------------------------------------------
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Windows".equals(info.getName())) {
@@ -576,8 +587,10 @@ public class telaInicial extends javax.swing.JFrame {
                 new telaInicial().setVisible(true);
             }
         });
+        //-------------------------------------------------------------------------
     }
 
+    //PADRAÕ DO NETBEANS ------------------------------------------------------
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBuscarMaisProximo;
     private javax.swing.JButton btnComprar;
@@ -627,7 +640,8 @@ public class telaInicial extends javax.swing.JFrame {
     private javax.swing.JLabel txtTotalArrecadado;
     private javax.swing.JLabel txtValorIngresso;
     // End of variables declaration//GEN-END:variables
-
+    //----------------------------------------------------------------------------
+    
     // Método verifica se todos os campos são válidos -----------
     public void consultandoDisponibilidade() {
                
