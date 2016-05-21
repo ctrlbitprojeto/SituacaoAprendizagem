@@ -59,25 +59,18 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="painelLotacao" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                              <Component id="painelSugestao" alignment="0" max="32767" attributes="0"/>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="painelDias" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="painelLugar" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
+                          <Component id="painelDias" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="painelPrimeiroJogo1" max="32767" attributes="0"/>
-                              <Component id="painelCompra" max="32767" attributes="0"/>
-                          </Group>
+                          <Component id="painelLugar" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="painelCompra" max="32767" attributes="0"/>
                       </Group>
+                      <Component id="painelSugestao" max="32767" attributes="0"/>
+                      <Component id="painelLotacao" alignment="0" max="32767" attributes="0"/>
                   </Group>
-                  <EmptySpace min="18" pref="8" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
                       <Component id="painelPrimeiroJogo" max="32767" attributes="0"/>
                       <Component id="painelArrecadacaoDoisJogos" max="32767" attributes="0"/>
@@ -107,7 +100,6 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="painelSugestao" min="-2" max="-2" attributes="0"/>
-                      <Component id="painelPrimeiroJogo1" max="32767" attributes="0"/>
                       <Component id="painelPrimeiroJogo" alignment="0" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -144,7 +136,7 @@
                           <Group type="102" attributes="0">
                               <Component id="layoutInutil" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="txtValorIngresso" max="32767" attributes="0"/>
+                              <Component id="txtValorIngresso" pref="86" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
@@ -466,7 +458,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="layoutInutil5" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="progresAmarelo" pref="549" max="32767" attributes="0"/>
+                              <Component id="progresAmarelo" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -760,32 +752,6 @@
             <Component class="javax.swing.JLabel" name="txtIngressosVendidosSegundoJogo">
             </Component>
           </SubComponents>
-        </Container>
-        <Container class="javax.swing.JPanel" name="painelPrimeiroJogo1">
-          <Properties>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                <TitledBorder title="Setor mais lotado do segundo jogo">
-                  <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
-                    <EtchetBorder/>
-                  </Border>
-                </TitledBorder>
-              </Border>
-            </Property>
-          </Properties>
-
-          <Layout>
-            <DimensionLayout dim="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-              </Group>
-            </DimensionLayout>
-            <DimensionLayout dim="1">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-              </Group>
-            </DimensionLayout>
-          </Layout>
         </Container>
       </SubComponents>
     </Container>
