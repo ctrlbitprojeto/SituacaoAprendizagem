@@ -542,7 +542,7 @@ public class telaInicial extends javax.swing.JFrame {
             comprandoIngressso();
             JOptionPane.showMessageDialog(null,"Compra efetivada com Sucesso");
         }else{
-            JOptionPane.showMessageDialog(null,"A compra não pôde ser efetivada");
+            JOptionPane.showMessageDialog(null,"O lugar tem que estar Disponível");
         }
 
         //limpa os campos para o usuário e escreve o valor arrecadado e quantidade de ingressos em todos os jpanel's
