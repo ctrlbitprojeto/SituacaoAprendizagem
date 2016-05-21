@@ -739,7 +739,7 @@
                           <Component id="layoutInutil16" max="32767" attributes="0"/>
                           <Component id="txtIngressosVendidosSegundoJogo" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="69" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
