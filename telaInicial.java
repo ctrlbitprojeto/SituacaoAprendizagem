@@ -4,19 +4,17 @@ import java.text.DecimalFormat;
 
 public class telaInicial extends javax.swing.JFrame {
     
-    //tudo que alterei ontem foi pelo netbeans :D
-    
     //Todos os arrays---------------------------------------------------
     //Dia do 1° jogo
-    int setorAmareloD1[][] = new int[25][200];
-    int setorAzulD1[][] = new int[25][200];
-    int setorBrancoD1[][] = new int[25][200];
-    int setorVerdeD1[][] = new int[25][200];
+    int setorAmareloD1[][] = new int[26][201];
+    int setorAzulD1[][] = new int[26][201];
+    int setorBrancoD1[][] = new int[26][201];
+    int setorVerdeD1[][] = new int[26][201];
     //Dia do 2° jogo
-    int setorAmareloD2[][] = new int[25][200];
-    int setorAzulD2[][] = new int[25][200];
-    int setorBrancoD2[][] = new int[25][200];
-    int setorVerdeD2[][] = new int[25][200];
+    int setorAmareloD2[][] = new int[26][201];
+    int setorAzulD2[][] = new int[26][201];
+    int setorBrancoD2[][] = new int[26][201];
+    int setorVerdeD2[][] = new int[26][201];
     //--------------------------------------------------------------------
 
     //Booleans para afirmações--------------------------------------------
@@ -529,22 +527,8 @@ public class telaInicial extends javax.swing.JFrame {
     private void btnConsultarDisponibilidadeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsultarDisponibilidadeActionPerformed
 
         txtValorIngresso.setText("");
-
         consultandoDisponibilidade();
-
-        if (disponibilidade == true) {
-
-            if (radioPrimeiroDia.isSelected() == true) {
-
-                verificarDisponibilidadeDia1();
-
-            } else {
-
-                verificarDisponibilidadeDia2();
-
-            }
-
-        }
+        
     }//GEN-LAST:event_btnConsultarDisponibilidadeActionPerformed
 
     private void btnComprarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarActionPerformed
@@ -646,7 +630,7 @@ public class telaInicial extends javax.swing.JFrame {
 
     // Método verifica se todos os campos são válidos -----------
     public void consultandoDisponibilidade() {
-       
+               
         if (caixaCadeira.getText().isEmpty()) {
             txtDisponibilidadeSN.setText("Especifique a Cadeira");
             disponibilidade = false;
@@ -664,8 +648,15 @@ public class telaInicial extends javax.swing.JFrame {
         } else if (Integer.parseInt(caixaFileira.getText())>= 26||Integer.parseInt(caixaFileira.getText())<=0) {
             txtDisponibilidadeSN.setText("Fileira não existe");
         } else {
-            disponibilidade = true;
+            //SE TODOS OS CAMPOS ESTIVEREM PREENCHIDOES O PROGRAMA CAI AQUI...
+            //SE PRIMEIRO JOGO FOR SELECIONADO ENTÃO EXECUTA METODO 'verificarDisponibilidadeDia1' SE NÃO 'verificarDisponibilidadeDia2'
+            if (radioPrimeiroDia.isSelected() == true) {
+                verificarDisponibilidadeDia1();
+            } else {
+                verificarDisponibilidadeDia2();
+            }
         }
+        
     }
 
     private void verificarDisponibilidadeDia1() {
