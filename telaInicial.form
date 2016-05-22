@@ -339,6 +339,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Primeiro Dia"/>
               </Properties>
+              <Events>
+                <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="radioPrimeiroDiaMousePressed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JRadioButton" name="radioSegundoDia">
               <Properties>

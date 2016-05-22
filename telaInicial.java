@@ -1,5 +1,6 @@
 package SituacaoAprendizagem;
 
+import static java.lang.Thread.sleep;
 import java.text.DecimalFormat;
 import javax.swing.JOptionPane;
 
@@ -203,6 +204,11 @@ public class telaInicial extends javax.swing.JFrame {
 
         buttonGroup1.add(radioPrimeiroDia);
         radioPrimeiroDia.setText("Primeiro Dia");
+        radioPrimeiroDia.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                radioPrimeiroDiaMousePressed(evt);
+            }
+        });
 
         buttonGroup1.add(radioSegundoDia);
         radioSegundoDia.setText("Segundo Dia");
@@ -560,6 +566,12 @@ public class telaInicial extends javax.swing.JFrame {
 
     }//GEN-LAST:event_btnComprarActionPerformed
 
+    private void radioPrimeiroDiaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_radioPrimeiroDiaMousePressed
+        
+        atualizarBarradeProgresso1Dia();
+        
+    }//GEN-LAST:event_radioPrimeiroDiaMousePressed
+
     public static void main(String args[]) {
 
         //PADRAÕ DO NETBEANS ------------------------------------------------------
@@ -683,8 +695,6 @@ public class telaInicial extends javax.swing.JFrame {
             if (setorAmareloD1[fileira][cadeira] != 1) {
                 txtDisponibilidadeSN.setText("Disponível");
                 txtValorIngresso.setText(df.format(25.00));
-                totalArrecadado+=25.00;
-                totalArrecadado1dia+=25.00;
             } else {
                 txtDisponibilidadeSN.setText("Ocupado");
             }
@@ -695,8 +705,6 @@ public class telaInicial extends javax.swing.JFrame {
             if (setorAzulD1[fileira][cadeira] != 1) {
                 txtDisponibilidadeSN.setText("Disponível");
                 txtValorIngresso.setText(df.format(25.00));
-                totalArrecadado+=25.00;
-                totalArrecadado1dia+=25.00;
             } else {
                 txtDisponibilidadeSN.setText("Ocupado");
             }
@@ -707,8 +715,6 @@ public class telaInicial extends javax.swing.JFrame {
             if (setorBrancoD1[fileira][cadeira] != 1) {
                 txtDisponibilidadeSN.setText("Disponível");
                 txtValorIngresso.setText(df.format(45.00));
-                totalArrecadado+=45.00;
-                totalArrecadado1dia+=45.00;
             } else {
                 txtDisponibilidadeSN.setText("Ocupado");
             }
@@ -719,8 +725,6 @@ public class telaInicial extends javax.swing.JFrame {
             if (setorVerdeD1[fileira][cadeira] != 1) {
                 txtDisponibilidadeSN.setText("Disponível");
                 txtValorIngresso.setText(df.format(45.00));
-                totalArrecadado+=45.00;
-                totalArrecadado1dia+=45.00;
             } else {
                 txtDisponibilidadeSN.setText("Ocupado");
             }
@@ -743,8 +747,6 @@ public class telaInicial extends javax.swing.JFrame {
             if (setorAmareloD2[fileira][cadeira] != 1) {
                 txtDisponibilidadeSN.setText("Disponível");
                 txtValorIngresso.setText(df.format(30.00));
-                totalArrecadado+=30.00;
-                totalArrecadado2dia+=30.00;
             } else {
                 txtDisponibilidadeSN.setText("Ocupado");
             }
@@ -755,8 +757,6 @@ public class telaInicial extends javax.swing.JFrame {
             if (setorAzulD2[fileira][cadeira] != 1) {
                 txtDisponibilidadeSN.setText("Disponível");
                 txtValorIngresso.setText(df.format(30.00));
-                totalArrecadado+=30.00;
-                totalArrecadado2dia+=30.00;
             } else {
                 txtDisponibilidadeSN.setText("Ocupado");
             }
@@ -767,8 +767,6 @@ public class telaInicial extends javax.swing.JFrame {
             if (setorBrancoD2[fileira][cadeira] != 1) {
                 txtDisponibilidadeSN.setText("Disponível");
                 txtValorIngresso.setText(df.format(50.00));
-                totalArrecadado+=50.00;
-                totalArrecadado2dia+=50.00;
             } else {
                 txtDisponibilidadeSN.setText("Ocupado");
             }
@@ -779,8 +777,6 @@ public class telaInicial extends javax.swing.JFrame {
             if (setorVerdeD2[fileira][cadeira] != 1) {
                 txtDisponibilidadeSN.setText("Disponível");
                 txtValorIngresso.setText(df.format(50.00));
-                totalArrecadado+=50.00;
-                totalArrecadado2dia+=50.00;
             } else {
                 txtDisponibilidadeSN.setText("Ocupado");
             }
@@ -800,12 +796,20 @@ public class telaInicial extends javax.swing.JFrame {
             tIngressos1dia+=1;
             if(comboSetor.getSelectedItem() == "Amarelo"){
                 setorAmareloD1[fileira][cadeira] = 1;
+                totalArrecadado+=25.00;
+                totalArrecadado1dia+=25.00;
             } else if(comboSetor.getSelectedItem() == "Azul"){
                 setorAzulD1[fileira][cadeira] = 1;
+                totalArrecadado+=25.00;
+                totalArrecadado1dia+=25.00;
             } else if(comboSetor.getSelectedItem() == "Branco"){
                 setorBrancoD1[fileira][cadeira] = 1;
+                totalArrecadado+=45.00;
+                totalArrecadado1dia+=45.00;
             } else if(comboSetor.getSelectedItem() == "Verde"){
                 setorVerdeD1[fileira][cadeira] = 1;
+                totalArrecadado+=45.00;
+                totalArrecadado1dia+=45.00;
             }
                 
         }else if (radioSegundoDia.isSelected()==true){
@@ -813,14 +817,40 @@ public class telaInicial extends javax.swing.JFrame {
             tIngressos2dia+=1;
             if(comboSetor.getSelectedItem() == "Amarelo"){
                 setorAmareloD2[fileira][cadeira] = 1;
+                totalArrecadado+=30.00;
+                totalArrecadado2dia+=30.00;
             } else if(comboSetor.getSelectedItem() == "Azul"){
                 setorAzulD2[fileira][cadeira] = 1;
+                totalArrecadado+=30.00;
+                totalArrecadado2dia+=30.00;
             } else if(comboSetor.getSelectedItem() == "Branco"){
                 setorBrancoD2[fileira][cadeira] = 1;
+                totalArrecadado+=50.00;
+                totalArrecadado2dia+=50.00;
             } else if(comboSetor.getSelectedItem() == "Verde"){
                 setorVerdeD2[fileira][cadeira] = 1;
+                totalArrecadado+=50.00;
+                totalArrecadado2dia+=50.00;
             }
         }
+        
+    }
+    
+    public void atualizarBarradeProgresso1Dia(){
+        
+        new Thread() {
+            public void run() {
+                try {
+                    sleep(100);
+                    //BARRA DE PROGRESSO progresAmarelo.setValue(100);
+                } catch (InterruptedException ex) {
+                }
+            }
+        }.start();
+        
+    }
+    
+    public void atualizarBarradeProgresso2Dia(){
         
     }
 
