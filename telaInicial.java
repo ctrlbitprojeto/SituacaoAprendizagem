@@ -19,10 +19,6 @@ public class telaInicial extends javax.swing.JFrame {
     int setorVerdeD2[][] = new int[26][201];
     //--------------------------------------------------------------------
 
-    //Booleans para afirmações--------------------------------------------
-    boolean disponibilidade = false;
-    //--------------------------------------------------------------------
-
     //decimal format para o dinheiro--------------------------------------
     DecimalFormat df = new DecimalFormat("R$ #,##0.00");
     
@@ -31,6 +27,15 @@ public class telaInicial extends javax.swing.JFrame {
     
     //variável total ingresos -------------------------------------------
     int tIngresos = 0, tIngressos1dia = 0, tIngressos2dia = 0;
+    
+    //CONTAR QUAL O SETOR MAIS LOTADO-------------------------------------
+        //contador de setor dia 1
+    int contSetorAmarelo1 = 0, contSetorAzul1 = 0, contSetorBranco1 = 0, contSetorVerde1 = 0;
+        //contador de setor dia 2
+    int contSetorAmarelo2 = 0, contSetorAzul2 = 0, contSetorBranco2 = 0, contSetorVerde2 = 0;
+    
+    //valor para o progressbar
+    double porcentagemQueAdicionaProgres = 0.02;
     
     //PADRÃO DO NETBEANS ------------------------------------------------------
     public telaInicial() {
@@ -212,6 +217,11 @@ public class telaInicial extends javax.swing.JFrame {
 
         buttonGroup1.add(radioSegundoDia);
         radioSegundoDia.setText("Segundo Dia");
+        radioSegundoDia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radioSegundoDiaActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout painelDiasLayout = new javax.swing.GroupLayout(painelDias);
         painelDias.setLayout(painelDiasLayout);
@@ -296,6 +306,7 @@ public class telaInicial extends javax.swing.JFrame {
         progresBranco.setForeground(new java.awt.Color(255, 255, 255));
         progresBranco.setStringPainted(true);
 
+        progresVerde.setForeground(new java.awt.Color(0, 153, 0));
         progresVerde.setStringPainted(true);
 
         javax.swing.GroupLayout painelLotacaoLayout = new javax.swing.GroupLayout(painelLotacao);
@@ -551,6 +562,12 @@ public class telaInicial extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null,"O lugar tem que estar Disponível");
         }
 
+        if(radioPrimeiroDia.isSelected()==true){
+            atualizarBarradeProgresso1Dia(); 
+        }else{
+            atualizarBarradeProgresso2Dia();
+        }
+        
         //limpa os campos para o usuário e escreve o valor arrecadado e quantidade de ingressos em todos os jpanel's
         txtSegundoJogoArrecadado.setText(df.format(totalArrecadado2dia));
         txtPrimeiroJogoArrecadado.setText(df.format(totalArrecadado1dia));
@@ -567,10 +584,12 @@ public class telaInicial extends javax.swing.JFrame {
     }//GEN-LAST:event_btnComprarActionPerformed
 
     private void radioPrimeiroDiaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_radioPrimeiroDiaMousePressed
-        
         atualizarBarradeProgresso1Dia();
-        
     }//GEN-LAST:event_radioPrimeiroDiaMousePressed
+
+    private void radioSegundoDiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioSegundoDiaActionPerformed
+        atualizarBarradeProgresso2Dia();
+    }//GEN-LAST:event_radioSegundoDiaActionPerformed
 
     public static void main(String args[]) {
 
@@ -656,16 +675,12 @@ public class telaInicial extends javax.swing.JFrame {
                
         if (caixaCadeira.getText().isEmpty()) {
             txtDisponibilidadeSN.setText("Especifique a Cadeira");
-            disponibilidade = false;
         } else if (caixaFileira.getText().isEmpty()) {
             txtDisponibilidadeSN.setText("Especifique a Fileira");
-            disponibilidade = false;
         } else if (comboSetor.getSelectedItem() == "Setor") {
             txtDisponibilidadeSN.setText("Especifique o Setor");
-            disponibilidade = false;
         } else if (radioPrimeiroDia.isSelected() == false && radioSegundoDia.isSelected() == false) {
             txtDisponibilidadeSN.setText("Especifique o Dia");
-            disponibilidade = false;
         } else if (Integer.parseInt(caixaCadeira.getText())>= 201||Integer.parseInt(caixaCadeira.getText())<=0) {
             txtDisponibilidadeSN.setText("Cadeira não existe");
         } else if (Integer.parseInt(caixaFileira.getText())>= 26||Integer.parseInt(caixaFileira.getText())<=0) {
@@ -798,18 +813,22 @@ public class telaInicial extends javax.swing.JFrame {
                 setorAmareloD1[fileira][cadeira] = 1;
                 totalArrecadado+=25.00;
                 totalArrecadado1dia+=25.00;
+                contSetorAmarelo1+=porcentagemQueAdicionaProgres;
             } else if(comboSetor.getSelectedItem() == "Azul"){
                 setorAzulD1[fileira][cadeira] = 1;
                 totalArrecadado+=25.00;
                 totalArrecadado1dia+=25.00;
+                contSetorAzul1+=porcentagemQueAdicionaProgres;
             } else if(comboSetor.getSelectedItem() == "Branco"){
                 setorBrancoD1[fileira][cadeira] = 1;
                 totalArrecadado+=45.00;
                 totalArrecadado1dia+=45.00;
+                contSetorBranco1+=porcentagemQueAdicionaProgres;
             } else if(comboSetor.getSelectedItem() == "Verde"){
                 setorVerdeD1[fileira][cadeira] = 1;
                 totalArrecadado+=45.00;
                 totalArrecadado1dia+=45.00;
+                contSetorVerde1+=porcentagemQueAdicionaProgres;
             }
                 
         }else if (radioSegundoDia.isSelected()==true){
@@ -819,18 +838,22 @@ public class telaInicial extends javax.swing.JFrame {
                 setorAmareloD2[fileira][cadeira] = 1;
                 totalArrecadado+=30.00;
                 totalArrecadado2dia+=30.00;
+                contSetorAmarelo2+=porcentagemQueAdicionaProgres;
             } else if(comboSetor.getSelectedItem() == "Azul"){
                 setorAzulD2[fileira][cadeira] = 1;
                 totalArrecadado+=30.00;
                 totalArrecadado2dia+=30.00;
+                contSetorAzul2+=porcentagemQueAdicionaProgres;
             } else if(comboSetor.getSelectedItem() == "Branco"){
                 setorBrancoD2[fileira][cadeira] = 1;
                 totalArrecadado+=50.00;
                 totalArrecadado2dia+=50.00;
+                contSetorBranco2+=porcentagemQueAdicionaProgres;
             } else if(comboSetor.getSelectedItem() == "Verde"){
                 setorVerdeD2[fileira][cadeira] = 1;
                 totalArrecadado+=50.00;
                 totalArrecadado2dia+=50.00;
+                contSetorVerde2+=porcentagemQueAdicionaProgres;
             }
         }
         
@@ -842,7 +865,10 @@ public class telaInicial extends javax.swing.JFrame {
             public void run() {
                 try {
                     sleep(100);
-                    //BARRA DE PROGRESSO progresAmarelo.setValue(100);
+                    progresAmarelo.setValue(contSetorAmarelo1);
+                    progresAzul.setValue(contSetorAzul1);
+                    progresBranco.setValue(contSetorBranco1);
+                    progresVerde.setValue(contSetorVerde1);
                 } catch (InterruptedException ex) {
                 }
             }
@@ -851,6 +877,19 @@ public class telaInicial extends javax.swing.JFrame {
     }
     
     public void atualizarBarradeProgresso2Dia(){
+        
+        new Thread() {
+            public void run() {
+                try {
+                    sleep(100);
+                    progresAmarelo.setValue(contSetorAmarelo2);
+                    progresAzul.setValue(contSetorAzul2);
+                    progresBranco.setValue(contSetorBranco2);
+                    progresVerde.setValue(contSetorVerde2);
+                } catch (InterruptedException ex) {
+                }
+            }
+        }.start();
         
     }
 
