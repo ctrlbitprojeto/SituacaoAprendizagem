@@ -10,7 +10,7 @@
     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
       <Dimension value="[0, 0]"/>
     </Property>
-    <Property name="resizable" type="boolean" value="false"/>
+    <Property name="undecorated" type="boolean" value="true"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -40,7 +40,7 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Component id="painelPrincipal" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
@@ -57,57 +57,65 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="painelDias" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="painelLugar" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="painelCompra" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="1064" max="32767" attributes="0"/>
+              <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="painelLotacao" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                              <Component id="painelSugestao" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="painelDias" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="painelLugar" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="painelCompra" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
                       </Group>
-                      <Component id="painelSugestao" max="32767" attributes="0"/>
-                      <Component id="painelLotacao" alignment="0" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="painelPrimeiroJogo" max="32767" attributes="0"/>
+                          <Component id="painelArrecadacaoDoisJogos" max="32767" attributes="0"/>
+                          <Component id="painelSegundoJogo" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="painelPrimeiroJogo" max="32767" attributes="0"/>
-                      <Component id="painelArrecadacaoDoisJogos" max="32767" attributes="0"/>
-                      <Component id="painelSegundoJogo" max="32767" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="painelDias" max="32767" attributes="0"/>
-                              <Component id="painelCompra" alignment="0" max="32767" attributes="0"/>
-                              <Component id="painelLugar" alignment="0" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="509" max="32767" attributes="0"/>
+              <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="painelDias" max="32767" attributes="0"/>
+                                  <Component id="painelCompra" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="painelLugar" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="painelArrecadacaoDoisJogos" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="painelArrecadacaoDoisJogos" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="painelSugestao" min="-2" pref="123" max="-2" attributes="0"/>
+                          <Component id="painelPrimeiroJogo" max="32767" attributes="0"/>
                       </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="painelSegundoJogo" max="32767" attributes="0"/>
+                          <Component id="painelLotacao" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="painelSugestao" min="-2" max="-2" attributes="0"/>
-                      <Component id="painelPrimeiroJogo" alignment="0" max="32767" attributes="0"/>
-                  </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="painelSegundoJogo" max="32767" attributes="0"/>
-                      <Component id="painelLotacao" max="32767" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -135,8 +143,9 @@
                           <Component id="btnComprar" max="32767" attributes="0"/>
                           <Group type="102" attributes="0">
                               <Component id="layoutInutil" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="txtValorIngresso" pref="86" max="32767" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="txtValorIngresso" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="36" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
@@ -147,11 +156,11 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="layoutInutil" max="32767" attributes="0"/>
-                          <Component id="txtValorIngresso" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="layoutInutil" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtValorIngresso" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="separate" max="32767" attributes="0"/>
+                      <EmptySpace pref="32" max="32767" attributes="0"/>
                       <Component id="btnComprar" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -165,6 +174,9 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="txtValorIngresso">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="R$ Valor"/>
+              </Properties>
             </Component>
             <Component class="javax.swing.JButton" name="btnComprar">
               <Properties>
@@ -216,7 +228,7 @@
                               <Component id="txtDisponibilidadeSN" max="32767" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -232,10 +244,7 @@
                                   <Component id="caixaFileira" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
-                              <Component id="txtDisponibilidadeSN" min="-2" pref="22" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="txtDisponibilidadeSN" min="-2" pref="39" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="11" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -326,7 +335,7 @@
                       <Component id="radioPrimeiroDia" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="radioSegundoDia" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="17" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -339,9 +348,6 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Primeiro Dia"/>
               </Properties>
-              <Events>
-                <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="radioPrimeiroDiaMousePressed"/>
-              </Events>
             </Component>
             <Component class="javax.swing.JRadioButton" name="radioSegundoDia">
               <Properties>
@@ -350,9 +356,6 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Segundo Dia"/>
               </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="radioSegundoDiaActionPerformed"/>
-              </Events>
             </Component>
           </SubComponents>
         </Container>
@@ -384,7 +387,7 @@
                           </Group>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jScrollPane1" max="32767" attributes="0"/>
+                      <Component id="jScrollPane1" pref="446" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -392,15 +395,16 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="layoutInutil4" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="btnBuscarMaisProximo" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="35" max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="jScrollPane1" pref="0" max="32767" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="layoutInutil4" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="btnBuscarMaisProximo" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jScrollPane1" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -464,7 +468,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="layoutInutil5" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="progresAmarelo" max="32767" attributes="0"/>
+                              <Component id="progresAmarelo" pref="549" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -507,7 +511,7 @@
                           <Component id="layoutInutil8" min="-2" max="-2" attributes="0"/>
                           <Component id="progresVerde" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="83" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -556,9 +560,6 @@
             </Component>
             <Component class="javax.swing.JProgressBar" name="progresVerde">
               <Properties>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="99" red="0" type="rgb"/>
-                </Property>
                 <Property name="stringPainted" type="boolean" value="true"/>
               </Properties>
             </Component>
@@ -587,9 +588,9 @@
                           <Component id="layoutInutil10" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="txtTotalArrecadado" max="32767" attributes="0"/>
-                          <Component id="txtIngressosVendidos" pref="40" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="txtTotalArrecadado" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtIngressosVendidos" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
@@ -599,14 +600,14 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="layoutInutil10" max="32767" attributes="0"/>
-                          <Component id="txtTotalArrecadado" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="layoutInutil10" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtTotalArrecadado" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="layoutInutil12" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtIngressosVendidos" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
+                          <Component id="txtIngressosVendidos" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="32" max="32767" attributes="0"/>
                   </Group>
@@ -626,12 +627,12 @@
             </Component>
             <Component class="javax.swing.JLabel" name="txtTotalArrecadado">
               <Properties>
-                <Property name="text" type="java.lang.String" value="R$ 0,00"/>
+                <Property name="text" type="java.lang.String" value="RS Valor"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="txtIngressosVendidos">
               <Properties>
-                <Property name="text" type="java.lang.String" value="0"/>
+                <Property name="text" type="java.lang.String" value="N&#xfa;mero Total"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -659,11 +660,11 @@
                           <Component id="layoutInutil13" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="txtIngressosVendidosPrimeiroJogo" max="32767" attributes="0"/>
-                          <Component id="txtPrimeiroJogoArrecadado" pref="64" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="txtPrimeiroJogoArrecadado" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtIngressosVendidosPrimeiroJogo" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="52" max="32767" attributes="0"/>
+                      <EmptySpace pref="155" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -671,14 +672,14 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="layoutInutil13" max="32767" attributes="0"/>
-                          <Component id="txtPrimeiroJogoArrecadado" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="layoutInutil13" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtPrimeiroJogoArrecadado" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="layoutInutil14" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtIngressosVendidosPrimeiroJogo" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
+                          <Component id="txtIngressosVendidosPrimeiroJogo" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
@@ -698,12 +699,12 @@
             </Component>
             <Component class="javax.swing.JLabel" name="txtPrimeiroJogoArrecadado">
               <Properties>
-                <Property name="text" type="java.lang.String" value="R$ 0,00"/>
+                <Property name="text" type="java.lang.String" value="RS Valor"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="txtIngressosVendidosPrimeiroJogo">
               <Properties>
-                <Property name="text" type="java.lang.String" value="0"/>
+                <Property name="text" type="java.lang.String" value="N&#xfa;mero Total"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -731,9 +732,9 @@
                           <Component id="layoutInutil15" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="txtIngressosVendidosSegundoJogo" max="32767" attributes="0"/>
-                          <Component id="txtSegundoJogoArrecadado" pref="64" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="txtSegundoJogoArrecadado" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtIngressosVendidosSegundoJogo" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
@@ -743,14 +744,14 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="layoutInutil15" max="32767" attributes="0"/>
-                          <Component id="txtSegundoJogoArrecadado" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="layoutInutil15" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtSegundoJogoArrecadado" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="layoutInutil16" max="32767" attributes="0"/>
-                          <Component id="txtIngressosVendidosSegundoJogo" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtIngressosVendidosSegundoJogo" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="layoutInutil16" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
@@ -770,12 +771,12 @@
             </Component>
             <Component class="javax.swing.JLabel" name="txtSegundoJogoArrecadado">
               <Properties>
-                <Property name="text" type="java.lang.String" value="R$ 0,00"/>
+                <Property name="text" type="java.lang.String" value="RS Valor"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="txtIngressosVendidosSegundoJogo">
               <Properties>
-                <Property name="text" type="java.lang.String" value="0"/>
+                <Property name="text" type="java.lang.String" value="N&#xfa;mero Total"/>
               </Properties>
             </Component>
           </SubComponents>
