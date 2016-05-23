@@ -6,6 +6,8 @@ import javax.swing.JOptionPane;
 
 public class telaInicial extends javax.swing.JFrame {
     
+    //testenovamente
+    
     //Todos os arrays---------------------------------------------------
     //Dia do 1° jogo
     int setorAmareloD1[][] = new int[26][201];
