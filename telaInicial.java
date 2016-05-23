@@ -23,7 +23,7 @@ public class telaInicial extends javax.swing.JFrame {
     DecimalFormat df = new DecimalFormat("R$ #,##0.00");
     
     //variável total arrecadado------------------------------------------
-    double totalArrecadado = 0, totalArrecadado1dia=0, totalArrecadado2dia=0;
+    double totalArrecadado = 0, totalArrecadado1dia = 0, totalArrecadado2dia = 0;
     
     //variável total ingresos -------------------------------------------
     int tIngresos = 0, tIngressos1dia = 0, tIngressos2dia = 0;
@@ -669,7 +669,7 @@ public class telaInicial extends javax.swing.JFrame {
     private javax.swing.JLabel txtValorIngresso;
     // End of variables declaration//GEN-END:variables
     //----------------------------------------------------------------------------
-    
+       
     // Método verifica se todos os campos são válidos -----------
     public void consultandoDisponibilidade() {
                
@@ -699,15 +699,10 @@ public class telaInicial extends javax.swing.JFrame {
 
     private void verificarDisponibilidadeDia1() {
 
-        //Conversão de valores -----------------------------------------------
-        int cadeira = Integer.parseInt(caixaCadeira.getText());
-        int fileira = Integer.parseInt(caixaFileira.getText());
-        //--------------------------------------------------------------------
-
         // SETOR AMARELO -----------------------------------------------------
         if (comboSetor.getSelectedItem() == "Amarelo") {
 
-            if (setorAmareloD1[fileira][cadeira] != 1) {
+            if (setorAmareloD1[Integer.parseInt(caixaFileira.getText())][Integer.parseInt(caixaCadeira.getText())] != 1) {
                 txtDisponibilidadeSN.setText("Disponível");
                 txtValorIngresso.setText(df.format(25.00));
             } else {
@@ -717,7 +712,7 @@ public class telaInicial extends javax.swing.JFrame {
         } // SETOR AZUL ---------------------------------------
         else if (comboSetor.getSelectedItem() == "Azul") {
 
-            if (setorAzulD1[fileira][cadeira] != 1) {
+            if (setorAzulD1[Integer.parseInt(caixaFileira.getText())][Integer.parseInt(caixaCadeira.getText())] != 1) {
                 txtDisponibilidadeSN.setText("Disponível");
                 txtValorIngresso.setText(df.format(25.00));
             } else {
@@ -727,7 +722,7 @@ public class telaInicial extends javax.swing.JFrame {
         } // SETOR BRANCO ---------------------------------------
         else if (comboSetor.getSelectedItem() == "Branco") {
 
-            if (setorBrancoD1[fileira][cadeira] != 1) {
+            if (setorBrancoD1[Integer.parseInt(caixaFileira.getText())][Integer.parseInt(caixaCadeira.getText())] != 1) {
                 txtDisponibilidadeSN.setText("Disponível");
                 txtValorIngresso.setText(df.format(45.00));
             } else {
@@ -737,7 +732,7 @@ public class telaInicial extends javax.swing.JFrame {
         } // SETOR VERDE ----------------------------------------
         else if (comboSetor.getSelectedItem() == "Verde") {
 
-            if (setorVerdeD1[fileira][cadeira] != 1) {
+            if (setorVerdeD1[Integer.parseInt(caixaFileira.getText())][Integer.parseInt(caixaCadeira.getText())] != 1) {
                 txtDisponibilidadeSN.setText("Disponível");
                 txtValorIngresso.setText(df.format(45.00));
             } else {
@@ -748,18 +743,13 @@ public class telaInicial extends javax.swing.JFrame {
             //-----------------------------------------------------------------------
 
     }
-
+    
     private void verificarDisponibilidadeDia2() {
-
-        //Conversão de valores -----------------------------------------------
-        int fileira = Integer.parseInt(caixaCadeira.getText());
-        int cadeira = Integer.parseInt(caixaFileira.getText());
-        //--------------------------------------------------------------------
 
         // SETOR AMARELO -----------------------------------------------------
         if (comboSetor.getSelectedItem() == "Amarelo") {
 
-            if (setorAmareloD2[fileira][cadeira] != 1) {
+            if (setorAmareloD2[Integer.parseInt(caixaFileira.getText())][Integer.parseInt(caixaCadeira.getText())] != 1) {
                 txtDisponibilidadeSN.setText("Disponível");
                 txtValorIngresso.setText(df.format(30.00));
             } else {
@@ -769,7 +759,7 @@ public class telaInicial extends javax.swing.JFrame {
         } // SETOR AZUL ---------------------------------------
         else if (comboSetor.getSelectedItem() == "Azul") {
 
-            if (setorAzulD2[fileira][cadeira] != 1) {
+            if (setorAzulD2[Integer.parseInt(caixaFileira.getText())][Integer.parseInt(caixaCadeira.getText())] != 1) {
                 txtDisponibilidadeSN.setText("Disponível");
                 txtValorIngresso.setText(df.format(30.00));
             } else {
@@ -779,7 +769,7 @@ public class telaInicial extends javax.swing.JFrame {
         } // SETOR BRANCO ---------------------------------------
         else if (comboSetor.getSelectedItem() == "Branco") {
 
-            if (setorBrancoD2[fileira][cadeira] != 1) {
+            if (setorBrancoD2[Integer.parseInt(caixaFileira.getText())][Integer.parseInt(caixaCadeira.getText())] != 1) {
                 txtDisponibilidadeSN.setText("Disponível");
                 txtValorIngresso.setText(df.format(50.00));
             } else {
@@ -789,7 +779,7 @@ public class telaInicial extends javax.swing.JFrame {
         } // SETOR VERDE ----------------------------------------
         else if (comboSetor.getSelectedItem() == "Verde") {
 
-            if (setorVerdeD2[fileira][cadeira] != 1) {
+            if (setorVerdeD2[Integer.parseInt(caixaFileira.getText())][Integer.parseInt(caixaCadeira.getText())] != 1) {
                 txtDisponibilidadeSN.setText("Disponível");
                 txtValorIngresso.setText(df.format(50.00));
             } else {
